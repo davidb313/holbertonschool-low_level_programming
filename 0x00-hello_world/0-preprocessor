@@ -1,3 +1,2 @@
 #!/bin/bash
 cgg -E $CFILE -o c
-
