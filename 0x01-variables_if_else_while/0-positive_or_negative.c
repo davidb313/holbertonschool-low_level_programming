@@ -1,11 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
 
-/* betty style doc for function main goes there */
+/**
+ * main - this function assign a random number
+ * executes and print the number
+ * Return: 0 (Success)
+ */
 int main(void)
-/* main description */	
 {
 int n;
 
