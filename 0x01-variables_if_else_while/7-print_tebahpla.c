@@ -1,18 +1,18 @@
 #include <stdio.h>
 
 /**
-* You can only use the putchar function
-* All your code should be in the main function
-* You can only use putchar twice in your code
-*/
+ * main - prints the lowercase alphabet in reverse,
+ * followed by a new line
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-char c;
+	char ch;
 
-	for (c = 'z'; c >= 'a'; c--)
+	for (ch = 'z'; ch >= 'a'; ch--)
 	{
-		putchar(c);
+		putchar(ch);
 	}
-putchar('\n');
-return (0);
+	putchar('\n');
+	return (0);
 }
