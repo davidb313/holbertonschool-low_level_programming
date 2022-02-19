@@ -1,26 +1,28 @@
 #include <stdio.h>
-
+#include <stdlib.h>
+#include <time.h>
 /**
- * main - prints the numbers from 00 to 99
- * Return: Always 0 (success)
+ * main - Returns all possible different combinations
+ * of two digits, separated by comma
+ * Return: 0
  */
 int main(void)
 {
-	int i, m;
-
-	for (i = 48; i <= 57; i++)
-	{
-		for (m = 48; m <= 57; m++)
-		{
-			putchar(i);
-			putchar(m);
-			if (i != 57 || m != 57)
-			{
-				putchar(',');
-				putchar(' ');
-			}
-		}
-	}
-	putchar('\n');
-	return (0);
+int i, j;
+for (i = 48 ; i < 57; i++)
+{
+j = i + 1;
+while (j < 58)
+{
+putchar(i);
+putchar(j);
+if (i != 56)
+{
+putchar(44);
+putchar(32); }
+j++;
+}
+}
+putchar(10);
+return (0);
 }
