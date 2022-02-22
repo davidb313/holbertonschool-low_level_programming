@@ -7,19 +7,17 @@
 
 void print_rev(char *s)
 {
-int lenght;
-lenght = strlen(str);
+int a, b, lenght;
 
-int i;
-i = 0;
+a = 0;
 
-for (i = lenght -1; i>= 0; i--)
+for (a = 0; s[a] != '\0'; a++);
+
+lenght = a;
+
+for (b = lenght -1; b>= 0; b--)
 {
-if (str[i] == ' ')
-{
-str[i] = '\0';
-_putchar('%s', str);
+_putchar(s[b]);
 }
 _putchar('\n');
 }
-
