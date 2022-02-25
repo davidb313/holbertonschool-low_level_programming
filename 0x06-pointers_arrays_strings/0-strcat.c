@@ -11,18 +11,15 @@ char *_strcat(char *dest, char *src)
 {
 int a, b;
 
-/* inicialize poointers */
 a = 0;
 b = 0;
 
-/* move to end of dest */
 while (dest[a] != '\0')
 a++;
 
-/* copy the second string to first string */
 while (src[b] != '\0')
 {
-dest[a] = dest[b];
+dest[a] = src[b];
 a++;
 b++;
 }
